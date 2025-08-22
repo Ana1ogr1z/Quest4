@@ -1,0 +1,202 @@
+
+.panel{
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    width: 50%;
+    margin: auto;
+    margin-top: 30px;
+}
+/*Комментарий*/
+input, textarea, button{
+    margin: 0% 2% 0%;
+    width: 93%;
+    font-size: 14px;
+}
+
+input, textarea{
+    border: 1px solid rgb(141, 114, 114);
+    border-radius: 5px;
+}
+
+button{
+    background: black;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 93%;
+}
+
+label, input{
+    margin: 0px 2% 10px;
+    width: 93%;
+}
+
+textarea{
+    resize:none;
+}
+
+input[type="checkbox"] {
+    width: 12px;
+    height: 12px;
+  accent-color: black;
+  cursor: pointer;
+}
+
+.block{
+    border: 1px;
+}
+
+h2 {
+            color: #444;
+            margin-top: 20px;
+            margin-left: 30%;
+            font-size: 22px;
+}
+
+ .users-container {
+        font-family: 'Segoe UI', Roboto, sans-serif;
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+    
+    .user-item {
+        display: grid;
+        grid-template-columns: 1fr 1fr 2fr;
+        gap: 15px;
+        padding: 12px 15px;
+        border-bottom: 2px solid #000000;
+        transition: background-color 0.2s;
+    }
+
+    .user-item:hover {
+        background-color: #e2e2e2;
+    }
+    
+    .user-name {
+        font-weight: 600;
+        color: #333;
+    }
+    
+    .user-surname {
+        color: #333;
+        font-weight: 600;
+    }
+    
+    .user-email {
+        color: #464545;
+        font-style: italic;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+/* Стили для секции отзывов */
+.reviews-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.review-card {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.review-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.card-header {
+    padding: 15px;
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #eee;
+}
+
+.card-title {
+    margin: 0;
+    font-size: 1.1rem;
+    color: #333;
+}
+
+.card-body {
+    padding: 15px;
+    flex-grow: 1;
+}
+
+.card-text {
+    color: #555;
+    line-height: 1.5;
+    margin: 0;
+}
+
+.card-footer {
+    padding: 15px;
+    background-color: #f8f9fa;
+    border-top: 1px solid #eee;
+}
+
+.btn-group {
+    display: flex;
+    width: 100%;
+}
+
+.btn {
+    flex: 1;
+    padding: 8px 12px;
+    text-align: center;
+    border: 1px solid #ddd;
+    background: white;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.btn-outline-primary {
+    color: #007bff;
+    border-color: #007bff;
+}
+
+.btn-outline-primary:hover {
+    background: #007bff;
+    color: white;
+}
+
+.btn-outline-danger {
+    color: #dc3545;
+    border-color: #dc3545;
+}
+
+.btn-outline-danger:hover {
+    background: #dc3545;
+    color: white;
+}
+
+.no-reviews {
+    grid-column: 1 / -1;
+    text-align: center;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+}
+
+/* Адаптивность */
+@media (max-width: 992px) {
+    .reviews-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 576px) {
+    .reviews-container {
+        grid-template-columns: 1fr;
+    }
+}
